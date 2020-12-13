@@ -4,13 +4,13 @@
 
 ![Image](./assets/img/diagram_app-deploy-maven.png)
 
-## Install Apache Maven
+## :white_check_mark: Install Apache Maven
 
 Install Maven using 
 ```
 sudo yum install maven.
 ```
-## Deploy the Application
+## :white_check_mark: Deploy the Application
 1. Move into the `kitchensink` directory:
 ```
 cd kitchensink
@@ -25,7 +25,7 @@ sudo mvn clean install wildfly:deploy
 ```
 Visit `PUBLICIP:8080/kitchensink` to ensure the application is working.
 
-## Make a Change to the Application
+## :white_check_mark: Make a Change to the Application
 1. Undeploy the application:
 
 ```
@@ -39,7 +39,7 @@ vim src/main/webapp/WEB-INF/templates/default.xhtml
 ```
 <title>Add a change!</title>
 ```
-## Redeploy the Application
+## :white_check_mark: Redeploy the Application
 1. Deploy the application once more; notice how much faster it deploys this time:
 ```
 sudo mvn clean install wildfly:deploy
