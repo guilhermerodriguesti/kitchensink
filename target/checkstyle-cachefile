@@ -1,0 +1,13 @@
+#Sun Dec 13 22:26:24 UTC 2020
+/home/cloud_user/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/model/Member.java=1607897711000
+/home/cloud_user/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/data/MemberListProducer.java=1607897711000
+/home/cloud_user/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/service/MemberRegistration.java=1607897711000
+/home/cloud_user/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/rest/JaxRsActivator.java=1607897711000
+/home/cloud_user/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/util/Resources.java=1607897711000
+/home/cloud_user/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/controller/MemberController.java=1607897711000
+/home/cloud_user/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/data/MemberRepository.java=1607897711000
+module-resource*?\:/wildfly-checkstyle/suppressions.xml=DD3FD5987C62C3034A4613F83C42B24683BCFC2E
+/home/cloud_user/kitchensink/src/test/java/org/jboss/as/quickstarts/kitchensink/test/MemberRegistrationIT.java=1607897711000
+/home/cloud_user/kitchensink/src/main/java/org/jboss/as/quickstarts/kitchensink/rest/MemberResourceRESTService.java=1607897711000
+configuration*?=7FE2371BDA6803E6BF3C4DD73BA729716A167C64
+/home/cloud_user/kitchensink/src/main/resources/META-INF/persistence.xml=1607897711000
