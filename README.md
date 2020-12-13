@@ -45,3 +45,60 @@ vim src/main/webapp/WEB-INF/templates/default.xhtml
 sudo mvn clean install wildfly:deploy
 ```
 2. Visit the application and take note of your change.
+
+<h1 align="center">Deploying an Application with the JBoss EAP Management CLI</h1>
+
+## :white_check_mark: Connect to the CLI
+
+1. In the cloud_user's home directory, confirm the presence of the `kitchensink.war` file:
+
+```
+ls
+```
+2. Move into the JBoss home directory:
+
+```
+cd /opt/jboss-eap
+```
+
+3. Open the JBoss Management CLI:
+
+```
+sudo ./bin/jboss-cli.sh
+```
+
+4. Connect to the server:
+
+```
+connect
+```
+## :white_check_mark: Deploy the Application
+
+1. Deploy the application:
+
+```
+deployment deploy-file /home/cloud_user/kitchensink.war
+```
+
+2. Check that the application has deployed using the deployment info command:
+
+```
+deployment info
+```
+
+3. Finally, access PUBLICIP:8080/kitchensink to access the application itself.
+
+## :white_check_mark: Disable/Undeploy the Application
+
+1. Now that you know the application is working, you can either disable it or undeploy it entirely:
+
+```
+deployment disable kitchensink.war
+deployment undeploy kitchensink.war
+```
+
+2. Exit the CLI:
+
+```
+exit
+```
