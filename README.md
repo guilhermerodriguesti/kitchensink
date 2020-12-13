@@ -1,5 +1,9 @@
 <h1 align="center">Deploying an Application with JBoss EAP and Apache Maven</h1>
 
+## Diagram 
+
+![Image](./assets/img/diagram_app-deploy-maven.png)
+
 ## Install Apache Maven
 
 Install Maven using 
