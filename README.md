@@ -1,31 +1,43 @@
-Learning Objectives
-Install Apache Maven
-Install Maven using sudo yum install maven.
+<h1 align="center">Deploying an Application with JBoss EAP and Apache Maven</h1>
 
-Deploy the Application
-Move into the kitchensink directory:
+## Install Apache Maven
 
+Install Maven using 
+```
+sudo yum install maven.
+```
+## Deploy the Application
+1. Move into the `kitchensink` directory:
+```
 cd kitchensink
-Review the contents. It contains a pom.xml file for building and deploying the project in Maven. The project itself is stored in the src directory, along with tests.
-
+```
+2. Review the contents. It contains a `pom.xml` file for building and deploying the project in Maven. The project itself is stored in the `src` directory, along with tests.
+```
 ls
-Deploy the application:
-
+```
+3. Deploy the application:
+```
 sudo mvn clean install wildfly:deploy
-Visit PUBLICIP:8080/kitchensink to ensure the application is working.
+```
+Visit `PUBLICIP:8080/kitchensink` to ensure the application is working.
 
-Make a Change to the Application
-Undeploy the application:
+## Make a Change to the Application
+1. Undeploy the application:
 
+```
 mvn wildfly:undeploy
-Make a superficial change to the application:
-
+```
+2. Make a superficial change to the application:
+```
 vim src/main/webapp/WEB-INF/templates/default.xhtml
-Update the title to add a change:
-
+```
+3. Update the title to add a change:
+```
 <title>Add a change!</title>
-Redeploy the Application
-Deploy the application once more; notice how much faster it deploys this time:
-
+```
+## Redeploy the Application
+1. Deploy the application once more; notice how much faster it deploys this time:
+```
 sudo mvn clean install wildfly:deploy
-Visit the application and take note of your change.
+```
+2. Visit the application and take note of your change.
